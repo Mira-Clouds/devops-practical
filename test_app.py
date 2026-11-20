@@ -1,3 +1,4 @@
+
 from app import app
 
 def test_home():
@@ -5,4 +6,4 @@ def test_home():
     response = client.get('/')
 
     assert response.status_code == 200
-    assert b"Hello, DevOps World! V1" in response.data
+    assert b"Hello, DevOps World! V2" in response.data
